@@ -35,7 +35,7 @@ export default function Navbar({ planCount = 0, savedCount = 0 }: NavbarProps) {
         {/* Center Section: Navigation Links */}
         <nav className="hidden md:flex items-center gap-2 bg-[#181818] px-2 py-1.5 rounded-full border border-[#262626]">
           <Link 
-            href="/workouts" 
+            href="/" 
             className="px-5 py-2 rounded-full text-sm font-medium bg-[#1e2316] text-[#ccff00] transition-colors shadow-inner"
           >
             Workouts
@@ -51,7 +51,7 @@ export default function Navbar({ planCount = 0, savedCount = 0 }: NavbarProps) {
         {/* Right Section: Plan & Saved Counters */}
         <div className="flex items-center gap-6 text-sm">
           {/* Plan Badge */}
-          <Link href="/plan" className="flex items-center gap-2 text-neutral-300 hover:text-white transition-colors">
+          <Link href="/my-plan" className="flex items-center gap-2 text-neutral-300 hover:text-white transition-colors">
             <span>Plan</span>
             <span className="w-6 h-6 rounded-full bg-[#ccff00] text-black font-bold text-xs flex items-center justify-center">
               {planCount}
@@ -59,7 +59,7 @@ export default function Navbar({ planCount = 0, savedCount = 0 }: NavbarProps) {
           </Link>
 
           {/* Saved Badge */}
-          <Link href="/saved" className="flex items-center gap-2 text-neutral-300 hover:text-white transition-colors">
+          <Link href="/my-plan" className="flex items-center gap-2 text-neutral-300 hover:text-white transition-colors">
             <span>Saved</span>
             <span className="w-6 h-6 rounded-full bg-[#1b1b1b] border border-[#333333] text-neutral-300 font-bold text-xs flex items-center justify-center">
               {savedCount}

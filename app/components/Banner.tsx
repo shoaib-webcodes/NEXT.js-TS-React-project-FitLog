@@ -12,7 +12,7 @@ const anton = Anton({
 export default function Banner() {
   return (
     <section className="container mx-auto">
-      <div className="mx-auto grid min-h-[378px] max-w-[1440px] overflow-hidden rounded-2xl border border-[#2b2d33] bg-[#1e1e1e] md:grid-cols-[1.15fr_0.85fr]">
+      <div className="mx-auto grid min-h-[378px] max-w-[1340px] overflow-hidden rounded-2xl border border-[#2b2d33] bg-[#1e1e1e] md:grid-cols-[1.15fr_0.85fr]">
         <div className="relative z-10 flex flex-col justify-center px-7 py-12 sm:px-12 md:py-10">
           <p className="mb-8 text-[10px] font-extrabold tracking-wide text-[#d5ff00]">
             WORKOUT LIBRARY
@@ -31,13 +31,13 @@ export default function Banner() {
 
           <Link
             href="/workouts"
-            className="mt-9 w-fit bg-[#d5ff00] px-1 text-[11px] font-bold uppercase leading-4 text-black transition hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d5ff00]"
+            className="mt-9 w-fit bg-[#d5ff00] px-3 py-2 rounded-xl text-[11px] font-bold uppercase leading-4 text-black transition hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#d5ff00]"
           >
             Browse workouts
           </Link>
         </div>
 
-        <div className="relative min-h-[270px] md:min-h-full">
+        <div className="relative min-h-[370px] md:min-h-full">
           {/* Replace this path with your own hero image */}
           <Image
             src="/banner.png"

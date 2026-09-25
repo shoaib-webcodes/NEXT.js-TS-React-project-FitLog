@@ -23,7 +23,7 @@ const ExerciseCard = ({ exercise }: ExerciseCardProp) => {
       : "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=740";
 
   return (
-    <article className="group overflow-hidden rounded-3xl border border-[#30343b] bg-[#1b1d22] text-white transition-all duration-300 hover:border-lime-400/50 hover:shadow-2xl hover:shadow-lime-500/10">
+    <div className="container mx-auto w-110 lg:w-100 group overflow-hidden rounded-3xl border border-[#30343b] bg-[#1b1d22] text-white transition-all duration-300 hover:border-lime-400/50 hover:shadow-2xl hover:shadow-lime-500/10">
       {/* Image Container with Zoom effect */}
       <div className="relative h-56 w-full overflow-hidden">
         <Image
@@ -76,7 +76,7 @@ const ExerciseCard = ({ exercise }: ExerciseCardProp) => {
           </span>
         </div>
       </div>
-    </article>
+    </div>
   );
 };
 

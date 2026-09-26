@@ -129,7 +129,7 @@ const ExercisePageDetails = async ({ params }: DetailsPageProp) => {
                         {/* Action Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 pt-4">
                             <AddButton exercise = {exercise} ></AddButton>
-                            <SavedButton></SavedButton>
+                            <SavedButton exercise = {exercise}></SavedButton>
                            
                         </div>
 

@@ -4,7 +4,7 @@
 import { Bookmark } from 'lucide-react';
 import { useContext, useState } from "react";
 import { ExerciseContext } from "../context/ExerciseContext";
-import { ExerciseType } from "../type/ExerciseType";
+import type { ExerciseType } from "../type/ExerciseType";
 import toast from 'react-hot-toast';
 
 
@@ -24,7 +24,7 @@ const SavedButton = ({ exercise }: { exercise: ExerciseType }) => {
   const handleSavedButton = () => {
     setSaved((previous) => [...previous, exercise]);
     setSavedCount((previous) => previous + 1);
-    toast.success("Exercise saved!");
+    toast.success("Exercise added in saved!");
     setSelected(true)
   };
 

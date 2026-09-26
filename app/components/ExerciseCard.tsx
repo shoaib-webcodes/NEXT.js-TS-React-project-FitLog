@@ -78,7 +78,7 @@ const ExerciseCard = ({ exercise }: ExerciseCardProp) => {
           <div>
 
           </div>
-        </div>
+        </div> 
        
       </div>
     </div>

@@ -1,13 +1,22 @@
-import React from 'react';
+'use client'
 import Link from 'next/link';
 import Image from 'next/image';
+import { useContext } from 'react';
+import { ExerciseContext } from '../context/ExerciseContext';
 
-interface NavbarProps {
-  planCount?: number;
-  savedCount?: number;
-}
 
-export default function Navbar({ planCount = 0, savedCount = 0 }: NavbarProps) {
+export default function Navbar() {
+  const context = useContext(ExerciseContext);
+
+  if (!context) {
+    throw new Error('Navbar must be used inside ExerciseProvider');
+  }
+
+  const { planCount , savedCount } = context;
+
+ 
+
+
   return (
     <header className="w-full bg-[#121212] text-white border-b border-[#222222] px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -62,7 +71,7 @@ export default function Navbar({ planCount = 0, savedCount = 0 }: NavbarProps) {
           <Link href="/my-plan" className="flex items-center gap-2 text-neutral-300 hover:text-white transition-colors">
             <span>Saved</span>
             <span className="w-6 h-6 rounded-full bg-[#1b1b1b] border border-[#333333] text-neutral-300 font-bold text-xs flex items-center justify-center">
-              {savedCount}
+            {savedCount}
             </span>
           </Link>
         </div>

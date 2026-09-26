@@ -74,6 +74,10 @@ const ExerciseCard = ({ exercise }: ExerciseCardProp) => {
             <Star size={17} className="text-yellow-400" fill="currentColor" />
             <span className="font-semibold">{rating}</span>
           </span>
+          {/* View Details Button */}
+          <div>
+
+          </div>
         </div>
        
       </div>

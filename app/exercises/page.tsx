@@ -1,5 +1,5 @@
 import type { ExerciseType } from "../type/ExerciseType";
-import ExerciseCard from "./ExerciseCard";
+import ExerciseCard from "../components/ExerciseCard";
 import Link from "next/link";
 
 const getExercises = async (): Promise<ExerciseType[]> => {

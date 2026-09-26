@@ -1,4 +1,6 @@
-import React from 'react';
+
+import AddButton from '@/app/components/AddButton';
+import SavedButton from '@/app/components/SavedButton';
 import { ExerciseType } from '@/app/type/ExerciseType';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
@@ -29,7 +31,7 @@ const ExercisePageDetails = async ({ params }: DetailsPageProp) => {
         exercise.id === Number(slug)
     );
 
-    console.log(exercise);
+
 
     // Handle the undefined case so TypeScript knows 'exercise' exists below
     if (!exercise) {
@@ -126,7 +128,9 @@ const ExercisePageDetails = async ({ params }: DetailsPageProp) => {
 
                         {/* Action Buttons */}
                         <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                            {/* Buttons go here */}
+                            <AddButton exercise = {exercise} ></AddButton>
+                            <SavedButton></SavedButton>
+                           
                         </div>
 
                     </div>

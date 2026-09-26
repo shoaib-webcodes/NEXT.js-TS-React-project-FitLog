@@ -75,6 +75,7 @@ const ExerciseCard = ({ exercise }: ExerciseCardProp) => {
             <span className="font-semibold">{rating}</span>
           </span>
         </div>
+       
       </div>
     </div>
   );
